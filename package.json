@@ -7,7 +7,8 @@
   "scripts": {
     "test": "nodemon app.js",
     "start": "node app.js",
-    "build-minimal":"npx tailwindcss -o ./public/css/build.css --minify"
+    "build-minimal":"npx tailwindcss -o ./public/css/build.css --minify",
+    "build-css":"npx tailwindcss -i ./public/src/input.css -o ./public/dist/output.css"
   },
   "keywords": [
     "Tatakae"
