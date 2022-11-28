@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build-minimal":"npx tailwindcss -o ./public/css/build.css --minify"
   },
   "keywords": [
     "Tatakae"
@@ -21,5 +22,8 @@
     "express": "^4.18.2",
     "nodemailer": "^6.8.0",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
   }
 }
