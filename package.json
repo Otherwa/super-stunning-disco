@@ -6,9 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "nodemon app.js",
-    "start": "node app.js",
-    "build-minimal":"npx tailwindcss -o ./public/css/build.css --minify",
-    "build-css":"npx tailwindcss -i ./public/src/input.css -o ./public/dist/output.css"
+    "start": "node app.js"
   },
   "keywords": [
     "Tatakae"
@@ -21,10 +19,8 @@
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "flowbite": "^1.5.4",
     "nodemailer": "^6.8.0",
     "nodemon": "^2.0.20"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
   }
 }

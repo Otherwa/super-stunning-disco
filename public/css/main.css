@@ -41,9 +41,3 @@ iframe {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--pink);
 }
-
-@media screen and (max-width: 768px) {
-    #spline {
-        height: 20rem;
-    }
-}
