@@ -5,7 +5,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [
     "Tatakae"
