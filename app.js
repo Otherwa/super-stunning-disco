@@ -18,6 +18,9 @@ app.get('/contact', (req, res) => {
     res.render('contact')
 })
 
+app.get('*', (req, res) => {
+    res.render('error')
+})
 app.listen(port, () => {
     console.log(`listening on port ${port}`)
 })
