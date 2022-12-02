@@ -1,6 +1,8 @@
 const express = require('express')
 const bodyparser = require('body-parser');
 const { sendEmail } = require('./commonfunctions/common')
+const registers = require('./models/emails')
+const { connect, dis } = require('./config/connect')
 
 //libs 
 const app = express()
@@ -17,10 +19,24 @@ app.get('/', (req, res) => {
 })
 
 // ajax here
-app.post('/', (req, res) => {
-    var email = req.body.email
-    sendEmail(email)
-    res.send("200")
+app.post('/', async (req, res) => {
+    await connect();
+
+    var date = new Date()
+    const users = new registers({
+        email: req.body.email,
+        date: date
+    })
+
+    users.save(err => {
+        if (err) {
+            res.send("404").status(404)
+        } else {
+            res.send("200").status(200)
+            sendEmail(req.body.email)
+        }
+    })
+
 })
 
 app.get('/contact', (req, res) => {

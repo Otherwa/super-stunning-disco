@@ -12,8 +12,9 @@ $('#email-sub').click(() => {
             console.log(data);
             // if res is 200
             if (data == "200") {
-                $('#email-sub').attr('disabled', 'disabled');
                 $('#email').val('');
+                $('#email').prop('disabled', 'true')
+                setTimeout($('#email').prop('disabled', 'false'), 2000)
             }
         },
         error: function (errorMessage) {

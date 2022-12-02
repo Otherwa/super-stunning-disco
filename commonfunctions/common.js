@@ -12,7 +12,6 @@ const transporter = nodemailer.createTransport({
     }
 })
 
-console.log(process.env.EMAIL)
 
 // send signup email
 function sendEmail(email) {
