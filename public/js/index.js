@@ -15,6 +15,8 @@ $('#email-sub').click(() => {
                 $('#email').val('');
                 $('#email').prop('disabled', 'true')
                 setTimeout($('#email').prop('disabled', 'false'), 2000)
+            } else {
+                $('#email').val('');
             }
         },
         error: function (errorMessage) {
