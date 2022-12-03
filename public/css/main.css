@@ -141,6 +141,7 @@ color:rgb(90, 255, 123)
     margin: 10px 0;
     border: none;
     border-bottom: 2px solid #333;
+    box-shadow: none;
     outline:none;
     resize: none;
 }
