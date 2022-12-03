@@ -50,3 +50,9 @@ html.is-animating .transition-fade {
     font-family: 'Rouge Script', cursive;
 
 }
+.tt{
+    background-image:url(https://giffiles.alphacoders.com/209/209037.gif) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
