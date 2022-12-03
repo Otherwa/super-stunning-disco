@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+@font-face {
+    font-family: hack;
+    src: url('../HACKED.ttf');
+}
+
 :root {
     --pink: rgb(231, 29, 187);
-    --blue: rgb(29, 137, 231);
+    --blue: rgb(36, 231, 29);
 }
 
 body {
@@ -47,16 +53,10 @@ html.is-animating .transition-fade {
 }
 
 .myfont-nav {
-    font-family: 'Rouge Script', cursive;
+    font-family: 'Nanum Gothic Coding', monospace;
+    /* font-family: 'Rouge Script', cursive; */
+}
 
-}
-.tt{
-    background-image:url(https://giffiles.alphacoders.com/209/209037.gif) ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-.invent{
-    font-family: 'Abril Fatface', cursive;
-    font-family: 'Prata', serif;
+.invent {
+    font-family: monospace;
 }
