@@ -7,21 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventrix</title>
     <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/e9b6b18513.js" crossorigin="anonymous"></script>
     <!-- tailwind -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
 </head>
 
 
 <!--<body style="background: radial-gradient(circle at left bottom, #141300 , #065b24)">-->
-    <body style="background:linear-gradient(27deg, rgba(2,0,36,1) 16%, rgba(27,195,36,1) 63%);">
+    <body>   
+ <!--   <body style="background:linear-gradient(27deg, rgba(2,0,36,1) 16%, rgba(27,195,36,1) 63%);">-->
     <div class="header">
         <%- include('./partials/nav'); %>
     </div>
     <main id="swup" class="transition-fade p-3 h-screen" >
-        <h1>
-            Contact Us
-        </h1>
+        <section class="contact">
 
+            <div class="content" >
+                <h1>
+                    Contact Us
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                </p>
+            </div>
+            <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="text">
+                   <h3>Address</h3>
+                   <p>Mithaghar Rd Jaihind Colony,<br>Tata Colony, Mulund East, Mumbai<br>Maharashtra 400081</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+ 
+ 
+                    <i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                   <h3>Phone</h3>
+                   <p>91365*****</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text">
+                   <h3>Email</h3>
+                   <p>vazeinventrix@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="contactForm">
+            <form>
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <textarea name="" required="required"></textarea>
+                    <span>Type your Message...</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" name="" required="required" value="Send">
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+        
+    </section>
     </main>
     <div class="footer">
         <%- include('./partials/foot'); %>
