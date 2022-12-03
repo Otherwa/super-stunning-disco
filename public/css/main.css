@@ -59,7 +59,9 @@ html.is-animating .transition-fade {
  justify-content: center;
  align-items:center;
  flex-direction:column;
- /* background-color: #111827; */
+ /* background-color: #111827;
+    background-color: background: linear-gradient(200deg, rgba(2,0,36,1) 37%, rgba(7,196,3,1) 48%, rgba(2,0,36,1) 73%);
+ */
  background: linear-gradient(200deg, rgba(2,0,36,1) 34%, rgba(7,196,3,1) 48%, rgba(2,13,15,1) 61%);
  background-size:cover;
 }
