@@ -42,7 +42,9 @@ app.post('/', async (req, res) => {
 app.get('/contact', (req, res) => {
     res.render('contact')
 })
-
+app.get('/event', (req, res) => {
+    res.render('event')
+})
 app.get('*', (req, res) => {
     res.render('error')
 })
