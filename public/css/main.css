@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Prata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
 :root {
     --pink: rgb(231, 29, 187);
     --blue: rgb(29, 137, 231);
@@ -75,14 +75,17 @@ html.is-animating .transition-fade {
   section {
     padding: 0px;
   }
-  
+  .desp{
+    font-family: 'Rubik Microbe', cursive;
+    font-weight: 300;
+  }
   .hero {
     font-size: clamp(40px, 6vw, 100px);
     line-height: 1;
     display: inline-block;
-    color: #fff;
+    color:white;
     z-index: 2;
-    letter-spacing: 10px;
+    letter-spacing: 15px;
   
     /* Bright things in dark environments usually cast that light, giving off a glow */
     filter: drop-shadow(0 1px 3px);
