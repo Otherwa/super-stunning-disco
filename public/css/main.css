@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Prata&display=swap');
 :root {
     --pink: rgb(231, 29, 187);
     --blue: rgb(29, 137, 231);
@@ -55,4 +55,8 @@ html.is-animating .transition-fade {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.invent{
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Prata', serif;
 }
