@@ -43,22 +43,9 @@ app.get('/contact', (req, res) => {
     res.render('contact')
 })
 
-app.get('/event', (req, res) => {
-    res.render('event')
+app.post('/event', (req, res) => {
+    console.log(req.body)
 })
-
-app.get('/event/hwu', (req, res) => {
-    res.render('events/evnt1')
-})
-
-app.get('/social', (req, res) => {
-    res.render('social')
-})
-
-app.get('/news', (req, res) => {
-    res.render('news')
-})
-
 
 app.get('*', (req, res) => {
     res.render('error')
