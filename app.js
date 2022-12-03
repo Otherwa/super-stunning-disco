@@ -45,6 +45,15 @@ app.get('/contact', (req, res) => {
 app.get('/event', (req, res) => {
     res.render('event')
 })
+
+app.get('/news', (req, res) => {
+    res.render('news')
+})
+
+app.get('/social', (req, res) => {
+    res.render('social')
+})
+
 app.get('*', (req, res) => {
     res.render('error')
 })
