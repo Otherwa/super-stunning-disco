@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 .contact {
 
-  position: absolute;
-  min-height: 100vh;
+  
   padding: 50px 100px;
   display: flex;
   justify-content: center;
@@ -175,7 +177,9 @@ html.is-animating .transition-fade {
     width: 100%;
   }
 }
-
+.regist{
+  background-color: #20C20E;
+}
 .tt {
   background-image: url(https://giffiles.alphacoders.com/209/209037.gif);
   background-size: cover;
@@ -184,14 +188,14 @@ html.is-animating .transition-fade {
 }
 
 .invent {
-  font-family: 'Abril Fatface', cursive;
-  font-family: 'Prata', serif;
+  font-family: 'Bungee Shade', cursive;
+  
 }
 
 h1,
 h2 {
   margin: 0;
-  font-weight: bold;
+  
 }
 
 a {
@@ -203,20 +207,21 @@ section {
 }
 
 .desp {
-  font-family: 'Rubik Microbe', cursive;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 300;
 }
 
 .hero {
-  font-size: clamp(40px, 6vw, 100px);
+  font-size: clamp(30px, 8vw, 80px);
   line-height: 1;
   display: inline-block;
-  color: white;
+  color: #ff0e0e;
   z-index: 2;
-  letter-spacing: 15px;
-
+  letter-spacing: 5px;
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 1px 3px);
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 6rem;
 }
 
 .demo {
@@ -680,4 +685,7 @@ section {
   opacity: 0.5;
   filter: blur(5px);
 
+}
+.hvr:hover{
+  color: #20C20E;
 }
