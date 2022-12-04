@@ -186,7 +186,11 @@ html.is-animating .transition-fade {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+.bimage{
+  background-image:url(https://github.com/rushiii3/Pet-venture/blob/main/gif2-unscreen.gif?raw=true) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .invent {
   font-family: 'Bungee Shade', cursive;
   
