@@ -54,8 +54,7 @@ html.is-animating .transition-fade {
 
 .contact {
 
- position:absolute;
- min-height:100vh;
+ 
  padding: 50px 100px;
  display: flex;
  justify-content: center;
@@ -199,7 +198,7 @@ color:rgb(90, 255, 123)
         width: 100%;
     }
 }
-=======
+/* ======= */
 .tt{
     background-image:url(https://giffiles.alphacoders.com/209/209037.gif) ;
     background-size: cover;
