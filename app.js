@@ -44,43 +44,35 @@ app.get('/contact', (req, res) => {
     res.render('contact')
 })
 
-app.get('/event', (req, res) => {
+app.get('/social', (req, res) => {
+    res.render('social')
+})
+
+app.get('/news', (req, res) => {
+    res.render('news')
+})
+
+app.get('/events', (req, res) => {
     res.render('event', { msg: "" })
 })
 
-app.post('/event', async (req, res) => {
-    await connect()
+//events 
+app.get('/events/event1', (req, res) => {
+    res.render('events/event1', { msg: "" })
+})
 
-    console.log(req.body)
+app.get('/events/event2', (req, res) => {
+    res.render('events/event2', { msg: "" })
+})
 
-    var date = new Date()
-
-    const users = new registers({
-        firstName: req.body.first_name,
-        middleName: req.body.middle_name,
-        lastName: req.body.last_name,
-        email: req.body.email,
-        rollno: req.body.roll_no,
-        date: date
-    })
-
-    users.save((err) => {
-        if (err) {
-            console.log(err)
-            res.render('event', { msg: "Already Exists" })
-        }
-        else {
-            sendEmail(req.body.email)
-            res.render('event', { msg: "Submitted" })
-        }
-    })
-
-
+app.get('/events/event3', (req, res) => {
+    res.render('events/event3', { msg: "" })
 })
 
 app.get('*', (req, res) => {
     res.render('error')
 })
+
 app.listen(port, () => {
     console.log(`listening on port ${port}`)
 })
