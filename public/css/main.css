@@ -718,6 +718,14 @@ section {
     letter-spacing: 10px;
     font-size: 3rem;
   }
+  .btn_description{
+    color:white;
+    color:black;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
 }
 @media only screen and (max-width: 768px) {
   .event_banner{
@@ -741,6 +749,18 @@ section {
     font-weight:bold ;
     letter-spacing: 10px;
     font-size: 2.5rem;
+  }
+  .btn_description{
+    color:white;
+    font-weight: bold;
+
+    color:black;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+
+
   }
 }
 
