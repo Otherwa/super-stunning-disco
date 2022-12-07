@@ -633,7 +633,7 @@ section {
     font-weight: 100;
     color: #e0287d;
     filter: blur(3px);
-    
+
   }
 
   20% {
@@ -718,10 +718,11 @@ section {
     font-size: 3rem;
   }
   .btn_description{
-    color:white;
+    color:black;
     font-size: 3rem;
     padding: 1rem;
     margin-top: 2rem;
+    font-weight: bold;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -747,14 +748,75 @@ section {
     font-size: 2.5rem;
   }
   .btn_description{
-    color:white;
+    font-weight: bold;
+
+    color:black;
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
     margin-top: 2rem;
+    
+    
   }
 }
-/* #myDIV{
-  display:none;
-} */
 
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-top: 4rem;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
