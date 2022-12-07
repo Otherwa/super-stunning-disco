@@ -17,7 +17,7 @@ ScrollReveal().reveal('#sub-main2', config);
 
 function description() {
 var x = document.getElementById("myDIV");
-if (x.style.display === "none") 
+if (x.style.display == "none") 
 {
 x.style.display = "block";
 }
