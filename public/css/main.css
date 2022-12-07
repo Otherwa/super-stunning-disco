@@ -693,3 +693,52 @@ section {
 .hvr:hover{
   color: #20C20E;
 }
+
+@media only screen and (max-width: 2560px) {
+  .event_banner{
+    background-image:url(https://www.gamewallpapers.com/img_script/wallpaper_dir/img.php?src=wallpaper_wo_long_fallen_dynasty_01_2560x1440.jpg&height=450&width=800&fill-to-fit&sharpen);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-attachment: fixed;
+  }
+  .event_description{
+    margin-top: 14rem;
+  }
+  .event_name{
+    margin-top:8rem;
+    font-weight:bold ;
+    letter-spacing: 10px;
+    font-size: 3rem;
+  }
+  .btn_description{
+    color:white;
+    font-size: 4rem;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event_banner{
+    background-image:url(https://www.gamewallpapers.com/img_script/wallpaper_dir/img.php?src=wallpaper_wo_long_fallen_dynasty_01_2560x1440.jpg&height=450&width=800&fill-to-fit&sharpen);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    background-attachment: fixed;
+  }
+  .event_description{
+    margin-top: 5rem;
+  }
+  .event_name{
+    margin-top:8rem;
+    font-weight:bold ;
+    letter-spacing: 10px;
+    font-size: 2.5rem;
+  }
+  .btn_description{
+    color:white;
+  }
+}
+#myDIV{
+  display: none;
+}
+
