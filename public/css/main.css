@@ -703,7 +703,12 @@ section {
     background-attachment: fixed;
   }
   .event_description{
-    margin-top: 14rem;
+    margin-top: 7rem;
+    background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  color: black;
+  border-radius: 10px;
   }
   .event_name{
     margin-top:8rem;
@@ -713,8 +718,9 @@ section {
   }
   .btn_description{
     color:white;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 1rem;
+    margin-top: 2rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -727,6 +733,11 @@ section {
   }
   .event_description{
     margin-top: 5rem;
+    background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  color: black;
+  border-radius: 10px;
   }
   .event_name{
     margin-top:8rem;
@@ -736,6 +747,10 @@ section {
   }
   .btn_description{
     color:white;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
   }
 }
 #myDIV{
