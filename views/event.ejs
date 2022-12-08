@@ -15,7 +15,35 @@
     <div class="header">
         <%- include('./partials/nav'); %>
     </div>
-    <main id="swup" class="transition-fade p-3 h-screen">
+    <main id="swup" class="transition-fade h-screen">
+
+
+        <div class="grid md:grid-cols-2 md:gap-6 p-5 mb-6 h-screen event_banner">
+            <div>
+                <h1 class="pl-5 event_name">
+                    <span style="color:red">HACKER</span> <br> <span style="color:#FFD700">WITHIN</span> <br> <span style="color:white">US</span> 
+                </h1>
+            </div>
+            <div class="p-3 text-center">
+                <div>
+
+                    <button class="glow-on-hover  text-center mx-auto" onclick="description()" type="button">DESCRIPTION</button>
+
+                </div>
+               
+                <div class="text-black text-2xl p-4 text-justify event_description" id="myDIV" style="display:none;">
+                    Some of you must have played the game called Mafia, some of you must have played the game called Among Us. What we have done is modify each game and made a fusion of it. Who will win? The hackers or the people? To find out, join us on the adventure!
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
         <section id="main" class="dark:bg-gray-900 w-full">
             <div
                 class="flex flex-wrap justify-center max-w-screen-xl p-1 mx-auto gap-8 lg:py-16 lg:grid-cols-12 bg-transparent">

@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 .contact {
-
-  
   padding: 50px 100px;
   display: flex;
   justify-content: center;
@@ -22,7 +20,9 @@
   font-weight: 500;
   color: #fff;
 }
-
+.contact .content{
+  text-align: center;
+}
 /* swup */
 .transition-fade {
   transition: 0.4s;
