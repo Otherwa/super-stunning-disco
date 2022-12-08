@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
-.contact {
 
-  
+.contact {
   padding: 50px 100px;
   display: flex;
   justify-content: center;
@@ -21,6 +20,10 @@
   font-size: 36px;
   font-weight: 500;
   color: #fff;
+}
+
+.contact .content {
+  text-align: center;
 }
 
 /* swup */
@@ -177,29 +180,33 @@ html.is-animating .transition-fade {
     width: 100%;
   }
 }
-.regist{
+
+.regist {
   background-color: #15860A;
 }
+
 .tt {
   background-image: url(https://giffiles.alphacoders.com/209/209037.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.bimage{
-  background-image:url(https://github.com/rushiii3/Pet-venture/blob/main/gif2-unscreen.gif?raw=true) ;
+
+.bimage {
+  background-image: url(https://github.com/rushiii3/Pet-venture/blob/main/gif2-unscreen.gif?raw=true);
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .invent {
   font-family: 'Bungee Shade', cursive;
-  
+
 }
 
 h1,
 h2 {
   margin: 0;
-  
+
 }
 
 a {
@@ -691,72 +698,84 @@ section {
   filter: blur(5px);
 
 }
-.hvr:hover{
+
+.hvr:hover {
   color: #20C20E;
 }
 
 @media only screen and (max-width: 2560px) {
-  .event_banner{
-    background-image:url(https://github.com/rushiii3/html-assignmnet/blob/main/bg1.jpg?raw=true);
-    background-size:100% 100%;
+  .event_banner {
+    background-image: url(https://github.com/rushiii3/html-assignmnet/blob/main/bg1.jpg?raw=true);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: auto;
     background-attachment: fixed;
   }
-  .event_description{
+
+  .event_description {
     margin-top: 7rem;
     background-color: black;
-  border: 1px solid black;
-  opacity: 0.7;
-  color: white;
-  border-radius: 10px;
+    border: 1px solid black;
+    opacity: 0.7;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 3rem;
   }
-  .event_name{
-    margin-top:8rem;
-    font-weight:bold ;
+
+  .event_name {
+    margin-top: 8rem;
+    font-weight: bold;
     letter-spacing: 10px;
     font-size: 3rem;
   }
-  .btn_description{
-    color:black;
+
+  .btn_description {
+    color: white;
+    color: black;
     font-size: 3rem;
     padding: 1rem;
     margin-top: 2rem;
     font-weight: bold;
   }
 }
+
 @media only screen and (max-width: 768px) {
-  .event_banner{
-    background-image:url(https://github.com/rushiii3/html-assignmnet/blob/main/bg1.jpg?raw=true);
-    background-size:100% 100%;
+  .event_banner {
+    background-image: url(https://github.com/rushiii3/html-assignmnet/blob/main/bg1.jpg?raw=true);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     height: auto;
     background-attachment: fixed;
   }
-  .event_description{
+
+  .event_description {
     margin-top: 5rem;
     background-color: black;
-  border: 1px solid black;
-  opacity: 0.7;
-  color: white;
-  border-radius: 10px;
+    border: 1px solid black;
+    opacity: 0.7;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 3rem;
   }
-  .event_name{
-    margin-top:8rem;
-    font-weight:bold ;
+
+  .event_name {
+    margin-top: 8rem;
+    font-weight: bold;
     letter-spacing: 10px;
     font-size: 2.5rem;
   }
-  .btn_description{
+
+  .btn_description {
+    color: white;
     font-weight: bold;
 
-    color:black;
+    color: black;
     font-size: 2rem;
     padding: 1rem;
     text-align: center;
     margin-top: 2rem;
-    
-    
+
+
   }
 }
 
@@ -766,12 +785,12 @@ section {
   border: none;
   outline: none;
   color: #fff;
-  background:  #FF0000;
+  background: #FF0000;
   cursor: pointer;
   position: relative;
   z-index: 0;
   border-radius: 10px;
-  margin-top: 4rem;
+  margin-top: 14rem;
 }
 
 .glow-on-hover:before {
@@ -779,7 +798,7 @@ section {
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -809,14 +828,22 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  background:  #FF0000;
+  background: #FF0000;
   left: 0;
   top: 0;
   border-radius: 10px;
 }
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }

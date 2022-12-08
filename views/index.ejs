@@ -19,17 +19,19 @@
         <%- include('./partials/nav'); %>
     </div>
 
-    <main id="swup" class="transition-fade  h-auto tt">
+    <main id="swup" class="transition-fade  h-full tt">
 
         <section id="main" class=" dark:bg-gray-900 bg-transparent">
-            <div class="flex max-w-screen-xl p-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 bg-transparent bimage">
-                <div id="sub-main1 bg-transparent" class="mr-auto place-self-center lg:col-span-7 p-1" >
-                        <div class="mb-6 mt-7" >
-                            <div class="hero-container">
-                                <div class="environment"></div>
-                                <h2 class="hero glitch layers w-9/12" data-text="ERROR 104 : HACKED YOU"><span>ERROR 104 : <br>HACKED YOU</span></h2>
-                            </div>
+            <div
+                class="flex max-w-screen-xl p-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 bg-transparent bimage">
+                <div id="sub-main1 bg-transparent" class="mr-auto place-self-center lg:col-span-7 p-1">
+                    <div class="mb-6 mt-7">
+                        <div class="hero-container">
+                            <div class="environment"></div>
+                            <h2 class="hero glitch layers w-9/12" data-text="ERROR 104 : HACKED YOU"><span>ERROR 104 :
+                                    <br>HACKED YOU</span></h2>
                         </div>
+                    </div>
 
                     <p class="mb-6  text-red-500 lg:mb-10  text-2xl p-4 desp text-justify dark:text-gray-400">
                         104 : Status error for valid credentials. So, this implies your system is hacked and now you
@@ -38,30 +40,31 @@
                     <div class="msg flex flex-col flex-wrap gap-6">
                         <div class="p-1">
                             <div id="msg"
-                                class="hidden p-4 mb-4 text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800"
+                                class="hidden p-4 mb-4 w-lg text-sm text-yellow-700 bg-yellow-100 rounded-lg dark:bg-yellow-200 dark:text-yellow-800"
                                 role="alert">
                                 <span class="font-medium">Warning alert!</span>
                                 Already Registered
                             </div>
                             <div id="suc"
-                                class="hidden p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
+                                class="hidden p-4 mb-4 w-lg text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800"
                                 role="alert">
                                 <span class="font-medium">Success!</span>
                                 Welcome to the Family!
                             </div>
                         </div>
 
-                        <div class="flex sm:flex-col gap-6 mx-auto p-5" >
+                        <div class="flex sm:flex-col gap-6 mx-auto p-5">
                             <form>
                                 <div>
-                                    <label for="email" class="block mb-2 text-3xl font-medium text-white mb-4">Register for daily updates</label>
-                            <input type="email" id="email"
-                            class="bg-gray-50 mb-6 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="yourmail@xyz.com" required>
+                                    <label for="email" class="block mb-2 text-3xl font-medium text-white mb-4">Register
+                                        for daily updates</label>
+                                    <input type="email" id="email"
+                                        class="bg-gray-50 mb-6 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="yourmail@xyz.com" required>
                                 </div>
-                            
-                            <button type="submit" id="email-sub"
-                            class="text-white  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 regist">Register-Up</button>
+
+                                <button type="submit" id="email-sub"
+                                    class="text-white  hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 regist">Register-Up</button>
                             </form>
                         </div>
                     </div>
