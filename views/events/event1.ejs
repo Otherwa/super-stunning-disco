@@ -21,39 +21,13 @@
         <%- include('../partials/nav'); %>
     </div>
     <main id="swup" class="transition-fade h-full">
-        <div class="grid md:grid-cols-2 md:gap-6 p-5 mb-6 event_banner">
-            <div>
-                <h1 class="pl-5 event_name">
-                    <span style="color:red">HACKER</span> <br> <span style="color:#FFD700">WITHIN</span> <br> <span
-                        style="color:white">US</span>
-                </h1>
-            </div>
-            <div class="p-3 text-center">
-                <div>
 
-                    <button class="glow-on-hover  text-center mx-auto" onclick="description()"
-                        type="button">DESCRIPTION</button>
-
-                </div>
-
-                <div class="text-black text-2xl p-4 text-justify event_description" id="myDIV" style="display:none;">
-                    Some of you must have played the game called Mafia, some of you must have played the game called
-                    Among Us. What we have done is modify each game and made a fusion of it. Who will win? The hackers
-                    or the people? To find out, join us on the adventure!
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="w-96 mx-auto h-auto mb-5 p-5">
-
-
-            <p style="color:green">
+        <div class="w-10/12 flex p-4 flex-col items-center">
+            <br>
+            <p style="color:green;font-family: monospace;font-size:1.1rem">
                 <%= msg %>
             </p>
-            <form method="POST" action="/event">
+            <form class="w-90" method="POST" action="/events/event1">
                 <p class="btn_description">
                     REGISTER
                 </p>
@@ -98,29 +72,80 @@
                         number</label>
                 </div>
                 <div class="relative z-0 mb-6 w-full group">
+
+                    <input type="text" name="phone_no" id="phone_no"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="roll_no"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
+                        number</label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
+                    <input type="text" name="course" id="roll_no"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="roll_no"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Course</label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
                     <label for="department" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
                         your
                         department</label>
-                    <select id="department"
+                    <select id="department" name="department"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option>Information Technology</option>
-                        <option>Commerce in Banking & Insurance</option>
-                        <option>Management Studies</option>
-                        <option>Biotechnology</option>
+                        <option value="--">--</option>
+                        <option value="PSYCHOLOGY">PSYCHOLOGY</option>
+                        <option value="FRENCH">FRENCH</option>
+                        <option value="SANSKRIT">SANSKRIT</option>
+                        <option value="ENGLISH">ENGLISH</option>
+                        <option value="MARATHI">MARATHI</option>
+                        <option value="POL.SCIENCE">POL.SCIENCE</option>
+                        <option value="HISTORY">HISTORY</option>
+                        <option value="SOCIOLOGY">SOCIOLOGY</option>
+                        <option value="ECONOMICS">ECONOMICS</option>
+                        <option value="MENTORING">MENTORING</option>
+                        <option value="EVS">EVS</option>
+                        <option value="RC">RC</option>
+                        <option value="PHY.EDN.">PHY.EDN.</option>
+                        <option value="UPSC">UPSC</option>
+                        <option value="HINDI">HINDI</option>
+                        <option value="JR AND DEGREE">JR AND DEGREE</option>
+                        <option value="FOUNDATION COURSE">FOUNDATION COURSE</option>
+                        <option value="INFORMATION TECHLOGY">INFORMATION TECHNOLOGY</option>
+                        <option value="PHYSICS">PHYSICS</option>
+                        <option value="CHEMISTRY">CHEMISTRY</option>
+                        <option value="BIOLOGY">BIOLOGY</option>
+                        <option value="MATHEMATICS">MATHEMATICS</option>
+                        <option value="BOTANY">BOTANY</option>
+                        <option value="ZOOLOGY">ZOOLOGY</option>
+                        <option value="PRACTICALS">PRACTICALS</option>
+                        <option value="COMMERCE">COMMERCE</option>
+                        <option value="B.ECONOMICS">B. ECONOMICS</option>
+                        <option value="ACCOUNTS">ACCOUNTS</option>
+                        <option value="B.LAW">B.LAW</option>
+                        <option value="MCOM">MCOM</option>
+                        <option value="BVOC">BVOC</option>
+                        <option value="M.SC.IT">M.SC.IT</option>
+                        <option value="BIOTECHONOLOGY">BIOTECHONOLOGY</option>
+                        <option value="BAF">BAF</option>
+                        <option value="BBI">BBI</option>
+                        <option value="BMS">BMS</option>
+                        <option value="BMM">BMMC</option>
                     </select>
                 </div>
+                <cite>
+                    <span style="color:red">
+                        (Note:-Registration are based on First Come First serve Basis)
+                    </span>
+                </cite>
+                <br>
+                <br>
                 <button type="submit"
-                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                    class=" w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
             </form>
         </div>
-        </div>
-        </section>
-
-
-
-
-
-
+        <br>
+        <br>
     </main>
     <div class="footer">
         <%- include('../partials/foot'); %>

@@ -182,7 +182,7 @@ html.is-animating .transition-fade {
 }
 
 .regist {
-  background-color: #15860A;
+  background-color: #ff0000;
 }
 
 .tt {
@@ -199,8 +199,8 @@ html.is-animating .transition-fade {
 }
 
 .invent {
-  font-family: 'Bungee Shade', cursive;
-
+  font-family: 'Courier New', Courier, monospace;
+  ;
 }
 
 h1,
@@ -700,7 +700,7 @@ section {
 }
 
 .hvr:hover {
-  color: #20C20E;
+  color: #000000;
 }
 
 @media only screen and (max-width: 2560px) {
@@ -739,43 +739,53 @@ section {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .event_banner {
-    background-image: url(https://github.com/rushiii3/html-assignmnet/blob/main/bg1.jpg?raw=true);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: auto;
-    background-attachment: fixed;
-  }
 
-  .event_description {
-    margin-top: 5rem;
-    background-color: black;
-    border: 1px solid black;
-    opacity: 0.7;
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 3rem;
-  }
+.event_banner {
+  background-image: url(https://github.com/rushiii3/html-assignmnet/blob/main/bg1.jpg?raw=true);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: auto;
+  background-attachment: fixed;
+}
 
-  .event_name {
-    margin-top: 8rem;
-    font-weight: bold;
-    letter-spacing: 10px;
-    font-size: 2.5rem;
-  }
+.event_description {
+  margin-top: 5rem;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.7;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
 
-  .btn_description {
-    color: white;
-    font-weight: bold;
+.event_name {
+  margin-top: 8rem;
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-size: 2.5rem;
+}
 
-    color: black;
-    font-size: 2rem;
-    padding: 1rem;
-    text-align: center;
-    margin-top: 2rem;
+.btn_description {
+  color: white;
+  font-weight: bold;
+
+  color: black;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
 
 
+}
+
+iframe {
+  width: 60%;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width:780px) {
+  iframe {
+    width: 100%;
   }
 }
 

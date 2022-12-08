@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyparser = require('body-parser');
-const { sendEmail } = require('./commonfunctions/common')
+const { generateOTP, sendEmailHacker } = require('./commonfunctions/common')
 const emails = require('./models/emails')
 const registers = require('./models/registers')
 const { connect, dis } = require('./config/connect')
@@ -37,7 +37,6 @@ app.post('/', async (req, res) => {
             sendEmail(req.body.email)
         }
     })
-
 })
 
 app.get('/contact', (req, res) => {
@@ -60,6 +59,36 @@ app.get('/events', (req, res) => {
 app.get('/events/event1', (req, res) => {
     res.render('events/event1', { msg: "" })
 })
+
+// ajax here
+app.post('/events/event1', async (req, res) => {
+    await connect();
+    console.log(req.body)
+    var otp = generateOTP()
+    const hacker = new registers({
+        registerid: otp,
+        firstname: req.body.first_name,
+        middlename: req.body.middle_name,
+        lastname: req.body.last_name,
+        email: req.body.email,
+        rollno: req.body.roll_no,
+        phone: req.body.phone_no,
+        course: req.body.course,
+        department: req.body.department,
+        date: new Date()
+    })
+
+    hacker.save((err, result) => {
+        if (err) {
+            console.error(err)
+            res.render('events/event1', { msg: "Already Registered" })
+        } else {
+            sendEmailHacker(req.body.email, otp, "20")
+            res.render('events/event1', { msg: "Registered Please Check Your Mail" })
+        }
+    })
+})
+
 
 app.get('/events/event2', (req, res) => {
     res.render('events/event2', { msg: "" })

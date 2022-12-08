@@ -2,15 +2,20 @@ const mongoose = require('mongoose');
 const schema = mongoose.Schema;
 
 const register = new schema({
-    firstName: {
+    registerid: {
+        unique: true,
         required: true,
         type: 'string'
     },
-    middleName: {
+    firstname: {
         required: true,
         type: 'string'
     },
-    lastName: {
+    middlename: {
+        required: true,
+        type: 'string'
+    },
+    lastname: {
         required: true,
         type: 'string'
     },
@@ -22,6 +27,22 @@ const register = new schema({
     rollno: {
         required: true,
         type: 'string'
+    },
+    phone: {
+        required: true,
+        type: 'string'
+    },
+    course: {
+        required: true,
+        type: 'string'
+    },
+    department: {
+        required: true,
+        type: 'string'
+    },
+    paid: {
+        type: 'boolean',
+        default: false
     },
     date: {
         type: 'string',
