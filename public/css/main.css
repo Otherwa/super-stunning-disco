@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .contact {
   padding: 50px 100px;
   display: flex;
@@ -823,4 +824,126 @@ section {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+}
+
+
+@media only screen and (max-width: 2560px) {
+  .event_banner{
+    background-image:url(https://github.com/rushiii3/html-assignmnet/blob/main/bg1.jpg?raw=true);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    background-attachment: fixed;
+  }
+  .event_description{
+    margin-top: 7rem;
+    background-color: black;
+  border: 1px solid black;
+  opacity: 0.7;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  }
+  .event_name1{
+    margin-top:8rem;
+    font-weight:bold ;
+    letter-spacing: 10px;
+    font-size: 103px;
+    color: #FC9779;
+    font-family: 'Anton', sans-serif;
+  }
+  .btn_description{
+    color:white;
+    color:black;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+  .evnt{
+    width: 60%;
+  }
+  .regist2{
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    border-radius: 1px;
+  font-family: 'Anton', sans-serif;
+  color: black;
+  border: 2px solid black;
+  margin-top: 2rem;
+  font-size: 22px;
+  
+  }
+  .done{
+    background-color: black;
+    color:white;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    margin-top: 2rem;
+    border-radius: 1px;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .event_banner{
+    background-image:url(https://github.com/rushiii3/html-assignmnet/blob/main/bg1.jpg?raw=true);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: auto;
+    background-attachment: fixed;
+  }
+  .event_description{
+    margin-top: 5rem;
+    background-color: black;
+  border: 1px solid black;
+  opacity: 0.7;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  }
+  .event_name1{
+    margin-top:8rem;
+    font-weight:bold ;
+    letter-spacing: 10px;
+    font-size: 90px;
+    font-family: 'Anton', sans-serif;
+  }
+  .btn_description{
+    color:white;
+    font-weight: bold;
+
+    color:black;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .evnt{
+    width: 90%;
+  }
+  .regist2{
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    border-radius: 1px;
+  font-family: 'Anton', sans-serif;
+  color: black;
+  border: 2px solid black;
+  margin-top: 2rem;
+  font-size: 18px;
+  
+  }
+  .done{
+    background-color: black;
+    color:white;
+    padding: 0.2rem 0.3rem 0.2rem 0.3rem;
+    margin-top: 0.2rem;
+    border-radius: 1px;
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+  }
+}
+.regist2:hover {
+  background-color: #000;
+  color: #FC9779;
+}
+#nd:hover{
+  background-color: #000;
 }
