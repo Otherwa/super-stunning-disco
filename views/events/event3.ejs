@@ -9,89 +9,143 @@
     <link rel="stylesheet" href="/css/main.css">
     <!-- tailwind -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+    <style>
+        /* #myDIV{
+  display:none;
+} */
+    </style>
 </head>
 
 <body>
     <div class="header">
         <%- include('../partials/nav'); %>
     </div>
-    <main id="swup" class="transition-fade p-3 h-full">
-        <h1>
-            Register-3
-        </h1>
+    <main id="swup" class="transition-fade h-full">
 
-        <section id="main" class="dark:bg-gray-900 w-full">
-            <div
-                class="flex flex-col self-center max-w-screen-xl p-1 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 bg-transparent">
-                <div id="sub-main1" class="mr-auto place-self-center lg:col-span-12 mx-auto w-1/2 p-4">
-                    <p style="color:green">
-                        <%= msg %>
-                    </p>
-                    <form method="POST" action="/event">
-                        <div class="relative z-0 mb-6 w-full group">
-                            <input type="text" name="first_name" id="first_name"
-                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                                placeholder=" " required />
-                            <label for="first_name"
-                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
-                                name</label>
-                        </div>
-                        <div class="relative z-0 mb-6 w-full group">
-                            <input type="text" name="middle_name" id="middle_name"
-                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                                placeholder=" " required />
-                            <label for="middle_name"
-                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Middle
-                                name</label>
-                        </div>
-                        <div class="relative z-0 mb-6 w-full group">
-                            <input type="text" name="last_name" id="last_name"
-                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                                placeholder=" " required />
-                            <label for="last_name"
-                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
-                                name</label>
-                        </div>
-                        <div class="relative z-0 mb-6 w-full group">
-                            <input type="email" name="email" id="email"
-                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                                placeholder=" " required />
-                            <label for="email"
-                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
-                                address</label>
-                        </div>
-                        <div class="relative z-0 mb-6 w-full group">
-                            <input type="text" name="roll_no" id="roll_no"
-                                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                                placeholder=" " required />
-                            <label for="roll_no"
-                                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Roll
-                                number</label>
-                        </div>
-                        <div class="relative z-0 mb-6 w-full group">
-                            <label for="department"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select your
-                                department</label>
-                            <select id="department"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                <option>Information Technology</option>
-                                <option>Commerce in Banking & Insurance</option>
-                                <option>Management Studies</option>
-                                <option>Biotechnology</option>
-                            </select>
-                        </div>
-                        <button type="submit"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-                    </form>
+        <div class="w-10/12 flex p-4 flex-col items-center">
+            <br>
+            <p style="color:green;font-family: monospace;font-size:1.1rem">
+                <%= msg %>
+            </p>
+            <form class="w-90" method="POST" action="/events/event3">
+                <p class="btn_description">
+                    REGISTER
+                </p>
+                <div class="relative z-0 mb-6 w-full group">
+                    <input type="text" name="first_name" id="first_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="first_name"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First
+                        name</label>
                 </div>
-            </div>
-        </section>
+                <div class="relative z-0 mb-6 w-full group">
+                    <input type="text" name="middle_name" id="middle_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="middle_name"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Middle
+                        name</label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
+                    <input type="text" name="last_name" id="last_name"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="last_name"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last
+                        name</label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
+                    <input type="email" name="email" id="email"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="email"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                        address</label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
+                    <input type="text" name="roll_no" id="roll_no"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="roll_no"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Roll
+                        number</label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
 
-
-
-
-
-
+                    <input type="text" name="phone_no" id="phone_no"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="roll_no"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone
+                        number</label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
+                    <input type="text" name="course" id="roll_no"
+                        class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="roll_no"
+                        class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Course</label>
+                </div>
+                <div class="relative z-0 mb-6 w-full group">
+                    <label for="department" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+                        your
+                        department</label>
+                    <select id="department" name="department"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option value="--">--</option>
+                        <option value="PSYCHOLOGY">PSYCHOLOGY</option>
+                        <option value="FRENCH">FRENCH</option>
+                        <option value="SANSKRIT">SANSKRIT</option>
+                        <option value="ENGLISH">ENGLISH</option>
+                        <option value="MARATHI">MARATHI</option>
+                        <option value="POL.SCIENCE">POL.SCIENCE</option>
+                        <option value="HISTORY">HISTORY</option>
+                        <option value="SOCIOLOGY">SOCIOLOGY</option>
+                        <option value="ECONOMICS">ECONOMICS</option>
+                        <option value="MENTORING">MENTORING</option>
+                        <option value="EVS">EVS</option>
+                        <option value="RC">RC</option>
+                        <option value="PHY.EDN.">PHY.EDN.</option>
+                        <option value="UPSC">UPSC</option>
+                        <option value="HINDI">HINDI</option>
+                        <option value="JR AND DEGREE">JR AND DEGREE</option>
+                        <option value="FOUNDATION COURSE">FOUNDATION COURSE</option>
+                        <option value="INFORMATION TECHLOGY">INFORMATION TECHNOLOGY</option>
+                        <option value="PHYSICS">PHYSICS</option>
+                        <option value="CHEMISTRY">CHEMISTRY</option>
+                        <option value="BIOLOGY">BIOLOGY</option>
+                        <option value="MATHEMATICS">MATHEMATICS</option>
+                        <option value="BOTANY">BOTANY</option>
+                        <option value="ZOOLOGY">ZOOLOGY</option>
+                        <option value="PRACTICALS">PRACTICALS</option>
+                        <option value="COMMERCE">COMMERCE</option>
+                        <option value="B.ECONOMICS">B. ECONOMICS</option>
+                        <option value="ACCOUNTS">ACCOUNTS</option>
+                        <option value="B.LAW">B.LAW</option>
+                        <option value="MCOM">MCOM</option>
+                        <option value="BVOC">BVOC</option>
+                        <option value="M.SC.IT">M.SC.IT</option>
+                        <option value="BIOTECHONOLOGY">BIOTECHONOLOGY</option>
+                        <option value="BAF">BAF</option>
+                        <option value="BBI">BBI</option>
+                        <option value="BMS">BMS</option>
+                        <option value="BMM">BMMC</option>
+                    </select>
+                </div>
+                <cite>
+                    <span style="color:red">
+                        (Note:-Registration are based on First Come First serve Basis)
+                    </span>
+                </cite>
+                <br>
+                <br>
+                <button type="submit"
+                    class=" w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+            </form>
+        </div>
+        <br>
+        <br>
     </main>
     <div class="footer">
         <%- include('../partials/foot'); %>
