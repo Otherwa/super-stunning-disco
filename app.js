@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyparser = require('body-parser');
-const { generateOTP, sendEmailHacker, sendEmailTreasure, sendEmailMania, sendEmailSys } = require('./commonfunctions/common')
+const { generateOTP, sendEmail, sendEmailHacker, sendEmailTreasure, sendEmailMania, sendEmailSys } = require('./commonfunctions/common')
 const emails = require('./models/emails')
 const HackerWithUs = require('./models/hacker')
 const TreasureHunt = require('./models/treasure')

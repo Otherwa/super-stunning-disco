@@ -26,6 +26,28 @@ const transporter = nodemailer.createTransport({
   }
 })
 
+// send signup email
+function sendEmail(email) {
+
+  var mailOptions = {
+    from: process.env.EMAIL,
+    to: email,
+    subject: 'Thanks For Registering',
+    text: 'Thanks For Registering',
+    html:
+      `
+      Welcome
+      `
+  }
+  transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log(error)
+    } else {
+      console.log('Email sent: ' + info.response)
+    }
+  })
+}
+
 
 // send signup email
 function sendEmailHacker(email, otp, price) {
@@ -1775,4 +1797,4 @@ function sendEmailSys(email, otp, price) {
   })
 }
 
-module.exports = { sendEmailHacker, generateOTP, sendEmailTreasure, sendEmailMania, sendEmailSys }
+module.exports = { sendEmailHacker, generateOTP, sendEmailTreasure, sendEmailMania, sendEmailSys, sendEmail }
