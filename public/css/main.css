@@ -787,6 +787,10 @@ iframe {
   iframe {
     width: 100%;
   }
+
+  img {
+    width: 100% !important;
+  }
 }
 
 .glow-on-hover {
@@ -822,6 +826,7 @@ iframe {
 
 img {
   border-radius: 0.5rem;
+  width: 30%;
 }
 
 .glow-on-hover:active {
