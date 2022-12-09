@@ -28,6 +28,9 @@
                 <p>
                     Please fill up the form and our team will get back in 24 hours
                 </p>
+                <p>
+                    <%= msg %>
+                </p>
             </div>
             <div class="container">
                 <div class="contactInfo">
@@ -65,18 +68,18 @@
                     </div>
                 </div>
                 <div class="contactForm">
-                    <form>
+                    <form action="/contact" method="POST">
                         <h2>Send Message</h2>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="name" required="required">
                             <span>Full Name</span>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" name="email" required="required">
                             <span>Email</span>
                         </div>
                         <div class="inputBox">
-                            <textarea name="" required="required"></textarea>
+                            <textarea name="msg" required="required"></textarea>
                             <span>Type your Message...</span>
                         </div>
                         <div class="inputBox">

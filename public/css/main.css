@@ -779,7 +779,7 @@ section {
 }
 
 iframe {
-  width: 60%;
+  width: 50%;
   border-radius: 0.5rem;
 }
 
@@ -818,6 +818,10 @@ iframe {
   opacity: 0;
   transition: opacity .3s ease-in-out;
   border-radius: 10px;
+}
+
+img {
+  border-radius: 0.5rem;
 }
 
 .glow-on-hover:active {

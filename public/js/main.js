@@ -12,17 +12,16 @@ let config = {
 }
 
 ScrollReveal().reveal('#main', config);
+ScrollReveal().reveal('.show', config);
 ScrollReveal().reveal('#sub-main1', config);
 ScrollReveal().reveal('#sub-main2', config);
 
 function description() {
-var x = document.getElementById("myDIV");
-if (x.style.display == "none") 
-{
-x.style.display = "block";
+    var x = document.getElementById("myDIV");
+    if (x.style.display == "none") {
+        x.style.display = "block";
+    }
+    else {
+        x.style.display = "none";
+    }
 }
- else {
-x.style.display = "none";
-}
-}
-                            

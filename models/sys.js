@@ -52,4 +52,4 @@ const register = new schema({
     versionKey: false //here
 })
 
-module.exports = mongoose.model('Users', register);
+module.exports = mongoose.model('SaveTheSystem', register);
