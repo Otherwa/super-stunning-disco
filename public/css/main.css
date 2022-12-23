@@ -778,6 +778,7 @@ section {
 
 }
 
+
 iframe {
   width: 50%;
   border-radius: 0.5rem;
@@ -788,7 +789,7 @@ body {
   background-color: #000;
 }
 
-input[type=text] {
+input[type=text],input[type=email] {
   color: #fff;
 }
 
