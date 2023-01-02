@@ -105,7 +105,7 @@ app.post('/events/event1', async (req, res) => {
             console.error(err)
             res.render('events/event1', { msg: "Already Registered" })
         } else {
-            sendEmailHacker(req.body.email, otp, "20")
+            sendEmailHacker(req.body.email, otp, "10")
             res.render('events/event1', { msg: "Registered Please Check Your Mail" })
         }
     })
@@ -140,7 +140,7 @@ app.post('/events/event2', async (req, res) => {
             console.error(err)
             res.render('events/event2', { msg: "Already Registered" })
         } else {
-            sendEmailTreasure(req.body.email, otp, "20")
+            sendEmailTreasure(req.body.email, otp, "100")
             res.render('events/event2', { msg: "Registered Please Check Your Mail" })
         }
     })
@@ -173,7 +173,7 @@ app.post('/events/event3', async (req, res) => {
             console.error(err)
             res.render('events/event3', { msg: "Already Registered" })
         } else {
-            sendEmailMania(req.body.email, otp, "20")
+            sendEmailMania(req.body.email, otp, "0")
             res.render('events/event3', { msg: "Registered Please Check Your Mail" })
         }
     })
@@ -204,7 +204,7 @@ app.post('/events/event4', async (req, res) => {
             console.error(err)
             res.render('events/event3', { msg: "Already Registered" })
         } else {
-            sendEmailSys(req.body.email, otp, "20")
+            sendEmailSys(req.body.email, otp, "10")
             res.render('events/event3', { msg: "Registered Please Check Your Mail" })
         }
     })
