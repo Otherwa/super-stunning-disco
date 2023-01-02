@@ -31,7 +31,7 @@ $('#email-sub').click(() => {
 })
 
 
-var countDownDate = new Date("Jan 6, 2023 09:30:00").getTime(); //Set date on event
+var countDownDate = new Date("Jan 3, 2023 09:30:00").getTime(); //Set date on event
 // Update 1 second
 var x = setInterval(function () {
     var now = new Date().getTime();
