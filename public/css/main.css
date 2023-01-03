@@ -743,8 +743,12 @@ section {
 
 }
 
+.slot {
+  color: red !important;
+}
+
 .hvr:hover {
-  color: #000000;
+  color: #ff0000;
 }
 
 @media only screen and (max-width: 2560px) {
